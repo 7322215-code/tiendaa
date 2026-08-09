@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>💅 Bella & Glam - Salón de Belleza</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <link rel="apple-touch-icon" href="icon-192 .png">
+  <meta name="theme-color" content="#ff6b9d">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- 📱 NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <i class="fas fa-spa"></i>
+      <span>Bella&Glam</span>
+    </div>
+    <div class="nav-menu">
+      <i class="fas fa-bars" id="menuToggle"></i>
+    </div>
+  </nav>
+
+  <!-- ⏫ BOTÓN SUBIR -->
+  <button id="scrollTop" class="scroll-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- 🎠 CARRUSEL CON IMÁGENES REALES -->
+  <section class="hero">
+    <div class="carousel-container">
+      <div class="carousel-slide">
+        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=800&h=400&fit=crop" alt="Corte de cabello" class="slide-image-real">
+        <div class="slide-text">
+          <h2>✂️ Cortes modernos</h2>
+          <p>Renueva tu estilo con los mejores</p>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&h=400&fit=crop" alt="Coloración" class="slide-image-real">
+        <div class="slide-text">
+          <h2>🎨 Coloración única</h2>
+          <p>Tonos que te harán brillar</p>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <img src="https://images.unsplash.com/photo-1590736704728-f4730bb30770?w=800&h=400&fit=crop" alt="Manicura" class="slide-image-real">
+        <div class="slide-text">
+          <h2>💅 Manicura de lujo</h2>
+          <p>Uñas perfectas para cada ocasión</p>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&h=400&fit=crop" alt="Tratamiento facial" class="slide-image-real">
+        <div class="slide-text">
+          <h2>🧖‍♀️ Tratamientos faciales</h2>
+          <p>Cuida tu piel como se merece</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-indicators">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+      <span class="dot" data-index="3"></span>
+    </div>
+  </section>
+
+  <!-- 🏷️ PROMOCIÓN ESPECIAL -->
+  <div class="promo-banner">
+    <i class="fas fa-gift"></i>
+    <p>🎉 <strong>2x1</strong> en cortes los lunes y miércoles</p>
+    <i class="fas fa-arrow-right"></i>
+  </div>
+
+  <!-- 💇‍♀️ SERVICIOS DESTACADOS CON IMÁGENES -->
+  <section class="services-section">
+    <h2><i class="fas fa-scissors"></i> Nuestros Servicios</h2>
+    <div class="services-grid">
+      <div class="service-card" data-service="Corte">
+        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400&h=250&fit=crop" alt="Corte de cabello" class="service-img">
+        <div class="service-info">
+          <h3>Corte de cabello</h3>
+          <p class="price">$15.00</p>
+          <div class="service-rating">⭐⭐⭐⭐⭐ (120)</div>
+          <button class="btn-book">Reservar</button>
+        </div>
+      </div>
+      <div class="service-card" data-service="Color">
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400&h=250&fit=crop" alt="Coloración" class="service-img">
+        <div class="service-info">
+          <h3>Coloración</h3>
+          <p class="price">$35.00</p>
+          <div class="service-rating">⭐⭐⭐⭐⭐ (85)</div>
+          <button class="btn-book">Reservar</button>
+        </div>
+      </div>
+      <div class="service-card" data-service="Manicura">
+        <img src="https://images.unsplash.com/photo-1590736704728-f4730bb30770?w=400&h=250&fit=crop" alt="Manicura" class="service-img">
+        <div class="service-info">
+          <h3>Manicura</h3>
+          <p class="price">$20.00</p>
+          <div class="service-rating">⭐⭐⭐⭐⭐ (95)</div>
+          <button class="btn-book">Reservar</button>
+        </div>
+      </div>
+      <div class="service-card" data-service="Maquillaje">
+        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400&h=250&fit=crop" alt="Maquillaje" class="service-img">
+        <div class="service-info">
+          <h3>Maquillaje</h3>
+          <p class="price">$25.00</p>
+          <div class="service-rating">⭐⭐⭐⭐⭐ (70)</div>
+          <button class="btn-book">Reservar</button>
+        </div>
+      </div>
+      <div class="service-card" data-service="Pedicura">
+        <img src="https://images.unsplash.com/photo-1596178060671-7a80dc8059ea?w=400&h=250&fit=crop" alt="Pedicura" class="service-img">
+        <div class="service-info">
+          <h3>Pedicura</h3>
+          <p class="price">$22.00</p>
+          <div class="service-rating">⭐⭐⭐⭐⭐ (60)</div>
+          <button class="btn-book">Reservar</button>
+        </div>
+      </div>
+      <div class="service-card" data-service="Tratamiento">
+        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&h=250&fit=crop" alt="Tratamiento capilar" class="service-img">
+        <div class="service-info">
+          <h3>Tratamiento capilar</h3>
+          <p class="price">$40.00</p>
+          <div class="service-rating">⭐⭐⭐⭐⭐ (45)</div>
+          <button class="btn-book">Reservar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ⭐ TESTIMONIOS -->
+  <section class="testimonials">
+    <h2><i class="fas fa-star"></i> Testimonios</h2>
+    <div class="testimonial-card">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>"¡Increíble! Mi cabello nunca había lucido tan bien."</p>
+      <span>- María G. <i class="fas fa-check-circle" style="color: #4CAF50;"></i></span>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>"El mejor salón de la ciudad, atención de primera."</p>
+      <span>- Laura P. <i class="fas fa-check-circle" style="color: #4CAF50;"></i></span>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>"Me encantó mi manicura, volveré sin dudas."</p>
+      <span>- Sofía R. <i class="fas fa-check-circle" style="color: #4CAF50;"></i></span>
+    </div>
+  </section>
+
+  <!-- ⏰ HORARIOS -->
+  <section class="schedule">
+    <h2><i class="fas fa-clock"></i> Horario de atención</h2>
+    <div class="schedule-grid">
+      <div class="day">
+        <span>Lunes - Viernes</span>
+        <span class="time">9:00 - 20:00</span>
+      </div>
+      <div class="day">
+        <span>Sábado</span>
+        <span class="time">10:00 - 18:00</span>
+      </div>
+      <div class="day">
+        <span>Domingo</span>
+        <span class="time">Cerrado</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🏆 NUESTRO EQUIPO CON IMÁGENES REALES -->
+  <section class="team">
+    <h2><i class="fas fa-users"></i> Nuestro equipo</h2>
+    <div class="team-grid">
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=200&h=200&fit=crop&crop=face" alt="Ana Martínez" class="team-img">
+        <h3>Ana Martínez</h3>
+        <p>Estilista Senior</p>
+        <span class="badge">10 años exp.</span>
+      </div>
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face" alt="Carlos Ruiz" class="team-img">
+        <h3>Carlos Ruiz</h3>
+        <p>Colorista</p>
+        <span class="badge">8 años exp.</span>
+      </div>
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1494790108379-be9c1b1c4c9f?w=200&h=200&fit=crop&crop=face" alt="Laura Gómez" class="team-img">
+        <h3>Laura Gómez</h3>
+        <p>Manicurista</p>
+        <span class="badge">6 años exp.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🎁 PROMOCIONES -->
+  <section class="promotions">
+    <h2><i class="fas fa-tags"></i> Promociones</h2>
+    <div class="promo-card">
+      <div class="promo-icon">🎉</div>
+      <div>
+        <h3>Pack Novia</h3>
+        <p>Maquillaje + Peinado + Manicura</p>
+        <span class="price-promo">$70.00</span>
+        <span class="price-old">$95.00</span>
+        <span class="discount">-26%</span>
+      </div>
+    </div>
+    <div class="promo-card">
+      <div class="promo-icon">🎊</div>
+      <div>
+        <h3>Pack Amigas</h3>
+        <p>2 cortes + 2 manicuras</p>
+        <span class="price-promo">$60.00</span>
+        <span class="price-old">$80.00</span>
+        <span class="discount">-25%</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📅 RESERVAS -->
+  <section class="booking-section">
+    <h2><i class="fas fa-calendar-check"></i> Agenda tu cita</h2>
+    <form id="formCita" class="booking-form">
+      <div class="form-group">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Tu nombre" required>
+      </div>
+      <div class="form-group">
+        <i class="fas fa-phone"></i>
+        <input type="tel" placeholder="Teléfono" required>
+      </div>
+      <div class="form-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" placeholder="Email (opcional)">
+      </div>
+      <div class="form-group">
+        <i class="fas fa-calendar-day"></i>
+        <input type="datetime-local" required>
+      </div>
+      <div class="form-group">
+        <i class="fas fa-list"></i>
+        <select required>
+          <option value="">Elige un servicio</option>
+          <option>Corte</option>
+          <option>Coloración</option>
+          <option>Manicura</option>
+          <option>Maquillaje</option>
+          <option>Pedicura</option>
+          <option>Tratamiento capilar</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <i class="fas fa-comment"></i>
+        <textarea placeholder="Notas adicionales" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn-submit">
+        <i class="fas fa-paper-plane"></i> Agendar cita
+      </button>
+    </form>
+  </section>
+
+  <!-- 📍 MAPA Y CONTACTO -->
+  <section class="contact">
+    <h2><i class="fas fa-map-marker-alt"></i> Encuéntranos</h2>
+    <div class="contact-info">
+      <div class="contact-item">
+        <i class="fas fa-map-pin"></i>
+        <p>Calle Bella 123, Col. Centro, Tu Ciudad</p>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <p>+52 123 456 7890</p>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <p>info@bellaglam.com</p>
+      </div>
+    </div>
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316bb7ae51%3A0xb1c0b5b7b5b7b5b7!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1644262070686!5m2!1sen!2sus" 
+        width="100%" 
+        height="200" 
+        style="border:0; border-radius: var(--radius);" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- 📱 FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3><i class="fas fa-spa"></i> Bella&Glam</h3>
+        <p>Tu salón de confianza desde 2015</p>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div class="footer-links">
+        <a href="#">Términos</a>
+        <a href="#">Política de privacidad</a>
+        <a href="#">Contacto</a>
+      </div>
+    </div>
+    <p class="copy">© 2026 Bella&Glam - Todos los derechos reservados</p>
+  </footer>
+
+  <!-- 🌙 BOTÓN MODO OSCURO -->
+  <button id="darkModeToggle" class="dark-mode-btn">
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <!-- 📱 TOAST -->
+  <div id="toast" class="toast"></div>
+
+  <!-- 📊 CONTADOR DE VISITAS (solo para interactividad) -->
+  <div class="visit-counter">
+    <i class="fas fa-eye"></i>
+    <span id="visitCount">0</span> visitas hoy
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
